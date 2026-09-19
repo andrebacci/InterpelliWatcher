@@ -1,0 +1,77 @@
+name: Controllo interpelli
+
+on:
+  schedule:
+    # Ogni 15 minuti. ATTENZIONE: il cron di GitHub Actions è in UTC e non è puntuale:
+    # i ritardi di 5-20 minuti sono normali, soprattutto sui minuti "tondi".
+    # Per questo gli orari sono sfalsati rispetto a :00/:15/:30/:45.
+    - cron: '3,18,33,48 * * * *'
+  # Permette di lanciare il controllo a mano dalla tab "Actions"
+  workflow_dispatch:
+
+permissions:
+  # Serve per poter ricommittare i file di stato aggiornati
+  contents: write
+
+concurrency:
+  # Evita che due esecuzioni sovrapposte si pestino i piedi sui file di stato
+  group: interpelli-watcher
+  cancel-in-progress: false
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Scarica il repository
+        uses: actions/checkout@v4
+
+      - name: Installa .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Cache dei pacchetti NuGet
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Compila
+        run: dotnet build InterpelliWatcher/InterpelliWatcher.csproj -c Release
+
+      - name: Esegui il controllo
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+          TELEGRAM_CHAT_ID_FRA: ${{ secrets.TELEGRAM_CHAT_ID_FRA }}
+          # I file di stato vivono nel repository, non accanto all'eseguibile
+          STATE_DIR: ${{ github.workspace }}/state
+          # Il log lo tiene già il runner: niente log.txt da ricommittare
+          LOG_FILE: 'off'
+          # Niente messaggio "nessun nuovo interpello" a ogni giro
+          NOTIFY_WHEN_NO_NEWS: 'false'
+        run: dotnet run --project InterpelliWatcher/InterpelliWatcher.csproj -c Release --no-build
+
+      - name: Salva lo stato aggiornato nel repository
+        # always(): lo stato va salvato anche se il passo precedente è fallito a metà
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain state)" ]; then
+            echo "Nessuna modifica ai file di stato."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git commit -m "Aggiorna stato interpelli [skip ci]"
+          # Un'altra esecuzione potrebbe aver committato nel frattempo
+          for tentativo in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && \
+            git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "Push fallito, ritento ($tentativo/3)..."
+            sleep 5
+          done
+          exit 1

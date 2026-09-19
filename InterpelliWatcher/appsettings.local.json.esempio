@@ -1,0 +1,6 @@
+{
+  "TelegramBotToken": "IL_TUO_NUOVO_TOKEN",
+  "TelegramChatIds": ["IL_TUO_CHAT_ID"],
+  "TelegramChatIdFra": "CHAT_ID_DI_FRA",
+  "NotifyWhenNoNews": true
+}

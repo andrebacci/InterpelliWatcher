@@ -1,0 +1,15 @@
+# Build .NET
+bin/
+obj/
+publish/
+*.user
+*.suo
+.vs/
+
+# Segreti e file locali: NON devono MAI finire su GitHub
+appsettings.local.json
+utility.txt
+*.env
+
+# Log
+log.txt
