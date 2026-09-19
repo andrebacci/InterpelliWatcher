@@ -213,7 +213,7 @@ internal class Program
                 else
                 {
                     Log($"OK, nessuna nuova riga (righe totali: {currentRows.Count}).");
-                    await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
+                    //await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
                 }
 
                 SaveState(page.StateFile, currentRows);
@@ -222,8 +222,8 @@ internal class Program
             if (!anyNewRows && allPagesAvailable)
             {
                 Log("Nessun nuovo interpello trovato.");
-                if (config.NotifyWhenNoNews)
-                    await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
+                //if (config.NotifyWhenNoNews)
+                await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
             }
             else if (!allPagesAvailable)
             {
