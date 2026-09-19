@@ -213,6 +213,7 @@ internal class Program
                 else
                 {
                     Log($"OK, nessuna nuova riga (righe totali: {currentRows.Count}).");
+                    //await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
                 }
 
                 SaveState(page.StateFile, currentRows);
