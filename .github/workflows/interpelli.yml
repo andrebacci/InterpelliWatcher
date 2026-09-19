@@ -5,7 +5,7 @@ on:
     # Ogni 15 minuti. ATTENZIONE: il cron di GitHub Actions è in UTC e non è puntuale:
     # i ritardi di 5-20 minuti sono normali, soprattutto sui minuti "tondi".
     # Per questo gli orari sono sfalsati rispetto a :00/:15/:30/:45.
-    - cron: '*/5 * * * *'
+    - cron: '3,18,33,48 * * * *'
   # Permette di lanciare il controllo a mano dalla tab "Actions"
   workflow_dispatch:
 
