@@ -221,8 +221,8 @@ internal class Program
             if (!anyNewRows && allPagesAvailable)
             {
                 Log("Nessun nuovo interpello trovato.");
-                if (config.NotifyWhenNoNews)
-                    await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
+                //if (config.NotifyWhenNoNews)
+                await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
             }
             else if (!allPagesAvailable)
             {
