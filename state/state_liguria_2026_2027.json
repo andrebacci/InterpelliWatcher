@@ -1,5 +1,4 @@
 [
-  "EEEE | Posto intero | IC CORNIGLIANO \u2013 Genova | STATALE | Primaria | 22/09/2026 |  | interpello.php?id=320",
   "EEEE | Spezzone | IC CORNIGLIANO \u2013 Genova | STATALE | Primaria | 22/09/2026 |  | interpello.php?id=321",
   "ADAA | Spezzone | IC VALTREBBIA \u2013 Torriglia | STATALE | Infanzia | 22/09/2026 |  | interpello.php?id=348",
   "ADAA | Posto intero | IC VALTREBBIA \u2013 Torriglia | STATALE | Infanzia | 22/09/2026 |  | interpello.php?id=347",
@@ -20,6 +19,7 @@
   "A042 | Spezzone | IPSIA A. ODERO \u2013 Genova | STATALE | Secondaria II grado | 23/09/2026 |  | interpello.php?id=287",
   "A042 | Spezzone | IPSIA A. ODERO \u2013 Genova | STATALE | Secondaria II grado | 23/09/2026 |  | interpello.php?id=286",
   "ADAA | Spezzone | IC SAN MARTINO - BORGORATTI \u2013 Genova | STATALE | Infanzia | 23/09/2026 |  | interpello.php?id=370",
+  "A040 | Spezzone | Omnicomprensivo VALLESCRIVIA \u2013 Ronco Scrivia | STATALE | Secondaria II grado | 23/09/2026 |  | interpello.php?id=375",
   "A040 | Posto intero | Omnicomprensivo VALLESCRIVIA \u2013 Ronco Scrivia | STATALE | Secondaria II grado | 23/09/2026 |  | interpello.php?id=374",
   "ADEE | Posto intero | IC SAN GIOVANNI BATTISTA \u2013 Genova | STATALE | Primaria | 23/09/2026 |  | interpello.php?id=356",
   "AM2A | Spezzone | S.MARIA IMMACOLATA \u2013 GENOVA | PARITARIA | Secondaria I grado | 23/09/2026 |  | interpello.php?id=339",
@@ -49,6 +49,7 @@
   "ADEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=335",
   "EEEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=333",
   "EEEE | Preventivo \u2264 10 giorni | IC AVEGNO - CAMOGLI - RECCO - USCIO \u2013 Recco | STATALE | Primaria | \u2014 |  | interpello.php?id=228",
+  "EEEE | Posto intero | IC CORNIGLIANO \u2013 Genova | STATALE | Primaria | 22/09/2026 |  | interpello.php?id=320",
   "A040 | Posto intero | Omnicomprensivo VALLESCRIVIA \u2013 Ronco Scrivia | STATALE | Secondaria II grado | 22/09/2026 |  | interpello.php?id=236",
   "ADEE | Posto intero | IC PRA\u2019 \u2013 Genova | STATALE | Primaria | 22/09/2026 |  | interpello.php?id=323",
   "ADAA | Posto intero | IC PEGLI \u2013 Genova | STATALE | Infanzia | 22/09/2026 |  | interpello.php?id=317",
