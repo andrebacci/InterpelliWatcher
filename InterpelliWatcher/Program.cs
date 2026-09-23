@@ -127,8 +127,7 @@ internal class Program
                 config.TelegramChatIds.Count == 0 ||
                 config.TelegramChatIds.Any(id => string.IsNullOrWhiteSpace(id) || id.StartsWith("INSERISCI")))
             {
-                
-               Log("ERRORE: token o chat id Telegram mancanti. Imposta i Secrets TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_IDS " + "(su GitHub: Settings > Secrets and variables > Actions) oppure valorizzali in appsettings.local.json."); 
+                Log("ERRORE: token o chat id Telegram mancanti. Imposta i Secrets TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_IDS " + "(su GitHub: Settings > Secrets and variables > Actions) oppure valorizzali in appsettings.local.json."); 
                 return 1;
             }
 
@@ -588,21 +587,22 @@ internal class Program
         sb.AppendLine($"\U0001F514 Nuovi interpelli pubblicati su {EscapeHtml(siteName)} ({newRows.Count}):");
         sb.AppendLine();
 
-        foreach (var row in newRows.Take(10)) // evitiamo messaggi troppo lunghi
+        foreach (var row in newRows) // evitiamo messaggi troppo lunghi
         {
-            var splitted = row.Key.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
             sb.AppendLine($"• <b>{EscapeHtml(row.SchoolName)}</b>");
             sb.AppendLine(EscapeHtml(row.DetailsWithoutSchoolName));
 
+            var splitted = row.Key.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (splitted?.Length > 0)
                 sb.AppendLine($"• {EscapeHtml(string.Concat("https://servizi.istruzioneliguria.gov.it/", splitted.Last()))}");
+            else
+                sb.AppendLine("Prova");
 
             sb.AppendLine();
         }
 
-        if (newRows.Count > 10)
-            sb.AppendLine($"... e altre {newRows.Count - 10} righe. Controlla la pagina per i dettagli.");
+        // if (newRows.Count > 10)
+        //     sb.AppendLine($"... e altre {newRows.Count - 10} righe. Controlla la pagina per i dettagli.");
 
         sb.AppendLine(pageUrl);
 
