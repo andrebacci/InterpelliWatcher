@@ -128,9 +128,8 @@ internal class Program
                 config.TelegramChatIds.Any(id => string.IsNullOrWhiteSpace(id) || id.StartsWith("INSERISCI")))
             {
                 
-               Log("ERRORE: token o chat id Telegram mancanti. Imposta i Secrets TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_IDS " +
-                    "(su GitHub: Settings > Secrets and variables > Actions) oppure valorizzali in appsettings.local.json."); 
-                    //return 1;
+               Log("ERRORE: token o chat id Telegram mancanti. Imposta i Secrets TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_IDS " + "(su GitHub: Settings > Secrets and variables > Actions) oppure valorizzali in appsettings.local.json."); 
+                return 1;
             }
 
             if (config.Pages == null || config.Pages.Count == 0)
