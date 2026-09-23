@@ -128,7 +128,7 @@ internal class Program
                 config.TelegramChatIds.Any(id => string.IsNullOrWhiteSpace(id) || id.StartsWith("INSERISCI")))
             {
                 Log("ERRORE: token o chat id Telegram mancanti. Imposta i Secrets TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_IDS " + "(su GitHub: Settings > Secrets and variables > Actions) oppure valorizzali in appsettings.local.json."); 
-                return 1;
+                //return 1;
             }
 
             if (config.Pages == null || config.Pages.Count == 0)
@@ -594,10 +594,10 @@ internal class Program
 
             var splitted = row.Key.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             if (splitted?.Length > 0)
-                sb.AppendLine($"• {EscapeHtml(string.Concat("https://servizi.istruzioneliguria.gov.it/", splitted.Last()))}");
-            else
-                sb.AppendLine("Prova");
-
+            {
+                sb.AppendLine();
+                sb.AppendLine($"• {string.Concat("https://servizi.istruzioneliguria.gov.it/", splitted.Last())}");
+            }
             sb.AppendLine();
         }
 
