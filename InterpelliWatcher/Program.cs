@@ -593,11 +593,12 @@ internal class Program
             sb.AppendLine(EscapeHtml(row.DetailsWithoutSchoolName));
 
             var splitted = row.Key.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            if (splitted?.Length > 0)
+            if (splitted?.Length > 0 && splitted.Last().ToLower().StartsWith("interpello"))
             {
                 sb.AppendLine();
                 sb.AppendLine($"• {string.Concat("https://servizi.istruzioneliguria.gov.it/", splitted.Last())}");
             }
+
             sb.AppendLine();
         }
 
