@@ -1,5 +1,4 @@
 [
-  "EEEE | Posto intero | IC SAN FRUTTUOSO \u2013 Genova | STATALE | Primaria | 01/10/2026 |  | interpello.php?id=738",
   "EEEE | Posto intero | IC VALLI E CARASCO \u2013 Carasco | STATALE | Primaria | 01/10/2026 |  | interpello.php?id=696",
   "EEEE | Spezzone | IC SERRA RICCO\u0027 e SANT\u0027OLCESE \u2013 Serra Ricc\u00F2 | STATALE | Primaria | 01/10/2026 |  | interpello.php?id=666",
   "AAAA | Posto intero | IC SERRA RICCO\u0027 e SANT\u0027OLCESE \u2013 Serra Ricc\u00F2 | STATALE | Infanzia | 01/10/2026 |  | interpello.php?id=664",
@@ -16,6 +15,7 @@
   "A042 | Spezzone | IPSIA A. ODERO \u2013 Genova | STATALE | Secondaria II grado | 02/10/2026 |  | interpello.php?id=654",
   "EEEE | Posto intero | CPIA CENTRO PONENTE \u2013 Genova | STATALE | Primaria | 02/10/2026 |  | interpello.php?id=759",
   "ADAA - EH | Spezzone | IC COGORNO \u2013 Cogorno | STATALE | Infanzia | 02/10/2026 |  | interpello.php?id=724",
+  "ADEE | Posto intero | IC MARASSI \u2013 Genova | STATALE | Primaria | 02/10/2026 |  | interpello.php?id=770",
   "EEEE | Spezzone | IC RAPALLO \u2013 Rapallo | STATALE | Primaria | 02/10/2026 |  | interpello.php?id=769",
   "ADEE - EH | Posto intero | IC VALLI E CARASCO \u2013 Carasco | STATALE | Primaria | 03/10/2026 |  | interpello.php?id=766",
   "ADMM - EH | Posto intero | IC CASARZA LIGURE \u2013 Casarza Ligure | STATALE | Secondaria I grado | 05/10/2026 |  | interpello.php?id=768",
@@ -79,6 +79,7 @@
   "ADEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=335",
   "EEEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=333",
   "EEEE | Preventivo \u2264 10 giorni | IC AVEGNO - CAMOGLI - RECCO - USCIO \u2013 Recco | STATALE | Primaria | \u2014 |  | interpello.php?id=228",
+  "EEEE | Posto intero | IC SAN FRUTTUOSO \u2013 Genova | STATALE | Primaria | 01/10/2026 |  | interpello.php?id=738",
   "A010 | Posto intero | Omnicomprensivo VALLESCRIVIA \u2013 Ronco Scrivia | STATALE | Secondaria II grado | 01/10/2026 |  | interpello.php?id=736",
   "ADEE | Posto intero | IC QUARTO \u2013 Genova | STATALE | Primaria | 01/10/2026 |  | interpello.php?id=730",
   "AAAA | Posto intero | IC CICAGNA \u2013 Cicagna | STATALE | Infanzia | 01/10/2026 |  | interpello.php?id=675",
