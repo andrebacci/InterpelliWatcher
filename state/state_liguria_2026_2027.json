@@ -1,5 +1,4 @@
 [
-  "ADEE | Posto intero | IC LAVAGNA \u2013 Lavagna | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=928",
   "AAAA | Posto intero | IC MARASSI \u2013 Genova | STATALE | Infanzia | 07/10/2026 |  | interpello.php?id=939",
   "EEEE | Posto intero | IC TERRALBA \u2013 Genova | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=889",
   "EEEE | Posto intero | IC BUSALLA - CASELLA \u2013 Busalla | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=946",
@@ -13,6 +12,8 @@
   "AAAA | Posto intero | IC SAN TEODORO \u2013 Genova | STATALE | Infanzia | 08/10/2026 |  | interpello.php?id=953",
   "ADEE - EH | Spezzone | IC CASARZA LIGURE \u2013 Casarza Ligure | STATALE | Primaria | 09/10/2026 |  | interpello.php?id=961",
   "ADEE | Spezzone | CALASANZIO \u2013 GENOVA | PARITARIA | Primaria | 09/10/2026 |  | interpello.php?id=800",
+  "ADEE - EH | Spezzone | IC VALLI E CARASCO \u2013 Carasco | STATALE | Primaria | 10/10/2026 |  | interpello.php?id=973",
+  "AAAA | Posto intero | IC VALLI E CARASCO \u2013 Carasco | STATALE | Infanzia | 10/10/2026 |  | interpello.php?id=972",
   "B026 | Spezzone | IIS A. P. GIANNINI \u2013 Chiavari | STATALE | Secondaria II grado | 12/10/2026 |  | interpello.php?id=739",
   "AS01 | Spezzone | LICEO SCIENTIFICO ISTITUTO CALASANZIO \u2013 GENOVA | PARITARIA | Secondaria II grado | 15/10/2026 |  | interpello.php?id=807",
   "ADMM | Spezzone | CALASANZIO \u2013 GENOVA | PARITARIA | Secondaria I grado | 15/10/2026 |  | interpello.php?id=804",
@@ -99,6 +100,7 @@
   "ADEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=335",
   "EEEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=333",
   "EEEE | Preventivo \u2264 10 giorni | IC AVEGNO - CAMOGLI - RECCO - USCIO \u2013 Recco | STATALE | Primaria | \u2014 |  | interpello.php?id=228",
+  "ADEE | Posto intero | IC LAVAGNA \u2013 Lavagna | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=928",
   "AAAA | Posto intero | IC CENTRO STORICO \u2013 Genova | STATALE | Infanzia | 07/10/2026 |  | interpello.php?id=924",
   "EEEE | Posto intero | IC TEGLIA \u2013 Genova | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=923",
   "A052 | Posto intero | IIS B. MARSANO (Agrario) \u2013 Genova | STATALE | Secondaria II grado | 07/10/2026 |  | interpello.php?id=886",
