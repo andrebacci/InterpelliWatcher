@@ -1,5 +1,4 @@
 [
-  "EEEE | Posto intero | IC TERRALBA \u2013 Genova | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=889",
   "EEEE | Posto intero | IC BUSALLA - CASELLA \u2013 Busalla | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=946",
   "AM12 | Posto intero | SANCTA MARIA AD NIVES \u2013 GENOVA | PARITARIA | Secondaria I grado | 07/10/2026 |  | interpello.php?id=959",
   "ADEE | Posto intero | IC SAN FRANCESCO DA PAOLA \u2013 Genova | STATALE | Primaria | 08/10/2026 |  | interpello.php?id=968",
@@ -9,6 +8,7 @@
   "EEEE | Posto intero | IC CICAGNA \u2013 Cicagna | STATALE | Primaria | 08/10/2026 |  | interpello.php?id=856",
   "ADEE | Posto intero | IC SAN FRUTTUOSO \u2013 Genova | STATALE | Primaria | 08/10/2026 |  | interpello.php?id=969",
   "ADEE - EH | Posto intero | IC CAMPOMORONE - CERANESI \u2013 Campomorone | STATALE | Primaria | 08/10/2026 |  | interpello.php?id=975",
+  "ADEE | Posto intero | IC CHIAVARI II \u2013 Chiavari | STATALE | Primaria | 08/10/2026 |  | interpello.php?id=986",
   "AAAA | Posto intero | IC SAN TEODORO \u2013 Genova | STATALE | Infanzia | 08/10/2026 |  | interpello.php?id=953",
   "ADEE - EH | Spezzone | IC CASARZA LIGURE \u2013 Casarza Ligure | STATALE | Primaria | 09/10/2026 |  | interpello.php?id=961",
   "ADEE | Spezzone | CALASANZIO \u2013 GENOVA | PARITARIA | Primaria | 09/10/2026 |  | interpello.php?id=800",
@@ -100,6 +100,7 @@
   "ADEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=335",
   "EEEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=333",
   "EEEE | Preventivo \u2264 10 giorni | IC AVEGNO - CAMOGLI - RECCO - USCIO \u2013 Recco | STATALE | Primaria | \u2014 |  | interpello.php?id=228",
+  "EEEE | Posto intero | IC TERRALBA \u2013 Genova | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=889",
   "AAAA | Posto intero | IC MARASSI \u2013 Genova | STATALE | Infanzia | 07/10/2026 |  | interpello.php?id=939",
   "ADEE | Posto intero | IC LAVAGNA \u2013 Lavagna | STATALE | Primaria | 07/10/2026 |  | interpello.php?id=928",
   "AAAA | Posto intero | IC CENTRO STORICO \u2013 Genova | STATALE | Infanzia | 07/10/2026 |  | interpello.php?id=924",
