@@ -1,5 +1,4 @@
 [
-  "AAAA | Spezzone | IC SAN FRANCESCO DA PAOLA \u2013 Genova | STATALE | Infanzia | 21/10/2026 |  | interpello.php?id=1265",
   "AAAA | Posto intero | IC SAN TEODORO \u2013 Genova | STATALE | Infanzia | 21/10/2026 |  | interpello.php?id=1245",
   "EEEE | Posto intero | IC MOLASSANA e PRATO \u2013 Genova | STATALE | Primaria | 21/10/2026 |  | interpello.php?id=1273",
   "EEEE | Spezzone | IC MOLASSANA e PRATO \u2013 Genova | STATALE | Primaria | 21/10/2026 |  | interpello.php?id=1272",
@@ -7,6 +6,7 @@
   "A041 | Posto intero | IIS MAJORANA - GIORGI \u2013 Genova | STATALE | Secondaria II grado | 21/10/2026 |  | interpello.php?id=1253",
   "EEEE | Spezzone | IC RAPALLO - ZOAGLI \u2013 Rapallo | STATALE | Primaria | 21/10/2026 |  | interpello.php?id=1269",
   "AL56 | Posto intero | IC SAN GIOVANNI BATTISTA \u2013 Genova | STATALE | Secondaria I grado | 22/10/2026 |  | interpello.php?id=1274",
+  "A041 | Spezzone | IIS A. P. GIANNINI \u2013 Chiavari | STATALE | Secondaria II grado | 30/10/2026 |  | interpello.php?id=1275",
   "ADEE | Sostegno | Contubernio d\u2019Albertis \u2013 GE1E006001 | PARITARIA | Primaria | 22/12/2026 |  | interpello_archivio.php?id=3",
   "AM2B | COMUNE | ISTITUTO DI CULTURA E LINGUE MARCELLINE \u2013 GE1E00900C | PARITARIA | Secondaria I grado | 28-02-2027 |  | interpello_archivio.php?id=15",
   "ADMM | Sostegno | ISTITUTO DI CULTURA E LINGUE MARCELLINE \u2013 GE1E00900C | PARITARIA | Secondaria I grado | 15-06-2027 |  | interpello_archivio.php?id=18",
@@ -109,6 +109,7 @@
   "ADEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=335",
   "EEEE | Preventivo \u2264 10 giorni | IC CASTELLETTO \u2013 Genova | STATALE | Primaria | \u2014 |  | interpello.php?id=333",
   "EEEE | Preventivo \u2264 10 giorni | IC AVEGNO - CAMOGLI - RECCO - USCIO \u2013 Recco | STATALE | Primaria | \u2014 |  | interpello.php?id=228",
+  "AAAA | Spezzone | IC SAN FRANCESCO DA PAOLA \u2013 Genova | STATALE | Infanzia | 21/10/2026 |  | interpello.php?id=1265",
   "AM2A | Spezzone | IC SESTRI EST \u2013 Genova | STATALE | Secondaria I grado | 21/10/2026 |  | interpello.php?id=1246",
   "EEEE | Posto intero | IC PONTEDECIMO \u2013 Genova | STATALE | Primaria | 20/10/2026 |  | interpello.php?id=1260",
   "EEEE | Spezzone | IC ALBARO \u2013 Genova | STATALE | Primaria | 20/10/2026 |  | interpello.php?id=1247",
