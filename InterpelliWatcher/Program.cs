@@ -221,7 +221,7 @@ internal class Program
             if (!anyNewRows && allPagesAvailable)
             {
                 Log("Nessun nuovo interpello trovato.");
-                if (config.NotifyWhenNoNews)
+                if (config.NotifyWhenNoNews && IsWithinNotificationHours())
                     await SendTelegramMessageToAllAsync(config.TelegramBotToken, config.TelegramChatIds, "Nessun nuovo interpello trovato.");
             }
             else if (!allPagesAvailable)
@@ -240,6 +240,15 @@ internal class Program
         {
             TrimLogFile();
         }
+    }
+
+    /// <summary>
+    /// True se l'ora italiana attuale è tra le 7:00 e le 20:00 (estremi inclusi).
+    /// </summary>
+    private static bool IsWithinNotificationHours()
+    {
+        var time = TimeZoneInfo.ConvertTime(DateTimeOffset.UtcNow, ItalianTimeZone).TimeOfDay;
+        return time >= TimeSpan.FromHours(7) && time <= TimeSpan.FromHours(20);
     }
 
     /// <summary>
